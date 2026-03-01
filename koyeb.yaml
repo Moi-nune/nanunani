@@ -1,0 +1,21 @@
+apiVersion: 1.0.0
+kind: Koyeb
+metadata:
+  name: nanu-nani-anniversary
+
+services:
+  - name: web
+    github:
+      repo: # Your GitHub repo URL here
+      branch: main
+    ports:
+      - port: 3000
+        name: http
+    env:
+      - name: NODE_ENV
+        value: production
+    buildCommand: npm install
+    runCommand: npm start
+    resources:
+      memory: 256Mi
+      cpu: 100m

@@ -1,0 +1,19 @@
+{
+  "name": "nanu-nani-anniversary",
+  "version": "1.0.0",
+  "description": "Happy Anniversary Nanu & Nani website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "anniversary",
+    "website"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
